@@ -1,0 +1,52 @@
+%% template name: University of Agder - IKT Template %%
+
+%% PREAMBEL %%
+\input{template/preamble.tex}
+\author{Fazal Mahmud Niloy}
+
+%% DOKUMENT START %%
+\begin{document}
+
+\pagenumbering{roman} % Sidenummerering for forord og TOC
+
+%% FORSIDE %%
+\include{template/title}
+
+%% Declaration %%
+% \include{template/declaration.tex}
+
+%% INNHOLDSFORTEGNELSE %%
+\setlength{\parskip}{.5em} % Setter linjeavstander i TOC litt mindre
+\cleardoublepage
+\tableofcontents
+\setlength{\parskip}{1em} % Går tilbake til standard avstand
+\newpage
+
+%% SAMMENDRAG & FORORD %%
+
+\pagenumbering{arabic} % Sidenummerering for resten av dokumentet
+
+%% SEKSJONER %%
+\include{sections/abstract}
+\include{sections/introduction}
+\include{sections/scopes}
+\include{sections/requirements}
+\include{sections/methodology}
+\include{sections/used_resources}
+\include{sections/outcomes}
+\include{sections/outstanding_issues}
+\include{sections/risks_mitigated}
+\include{sections/lessons_learnt}
+\include{sections/reccommendation_to_sponsor}
+\include{sections/conclusion}
+
+
+
+%% BIBLIOGRAFI %%
+\printbibliography[heading=bibintoc]
+\newpage
+
+%% VEDLEGG %%
+
+%% DOKUMENT SLUTT %%
+\end{document}
